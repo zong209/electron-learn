@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
     "vue": "^2.5.21",
@@ -14,6 +17,10 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.3.0",
     "@vue/cli-service": "^3.3.0",
+    "electron": "^3.0.0",
+    "vue-cli-plugin-electron-builder": "^1.0.0-rc.10",
     "vue-template-compiler": "^2.5.21"
-  }
+  },
+  "__npminstall_done": false,
+  "main": "background.js"
 }
